@@ -20,11 +20,6 @@ body {
     background-color: var(--default-color);
 }
 
-/* section {
-    width: 100%;
-    height: 100vh;
-} */
-
 .header {
     display: flex;
     align-items: center;
@@ -32,9 +27,11 @@ body {
     position: fixed;
 
     background-color: #212121;
+    border-bottom: 1px solid var(--main-color);
     height: 86px;
     padding: 0 40px;
     width: 100%;
+    z-index: 999;
 }
 
 .image__logo {
@@ -107,10 +104,8 @@ body {
     position: absolute;
     bottom: 2%;
     right: 50%;
-    width: 2px;
-    /*espessura*/
-    height: 50px;
-    /*altura*/
+    width: 2px; /*espessura*/
+    height: 50px; /*altura*/
     background-color: #c4c4c4bd;
     margin: 0 20px;
 }
@@ -129,5 +124,45 @@ body {
     font-size: 64px;
     text-align: center;
     color: var(--main-color);
+}
+
+/*terceira sessao*/
+.third__session {
+    width: 100%;
+    height: calc(100vh - 86px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me__title {
+    font-family: var(--font-main);
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--main-color);
+
+}
+
+.about-me__container {
+    display: flex;
+    margin: 0 45px;
+    gap: 20px;
+    color: #ffffff;
+}
+
+
+.about-me__text {
+    font-size: 2.4em;
+}
+
+.about-me__link {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: 5%;
 }
 
