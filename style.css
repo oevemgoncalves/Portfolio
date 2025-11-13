@@ -221,3 +221,51 @@ hr {
     border-color: var(--main-color);
 }
 
+.project__link {
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--main-color);
+    padding-bottom: 3%;
+}
+
+/*quinta sessao*/
+.fifth__session {
+    height: calc(100vh - 86px);
+    align-items: center;
+    margin: 10%;
+}
+
+.contact__container {
+    display: flex;
+}
+
+.text {
+    font-family: var(--font-main);
+    font-weight: 200;
+    color: var(--main-color);
+    font-size: 5em;
+}
+
+.secundary__text {
+    margin-bottom: 50px;
+}
+
+.hr__contact {
+    margin-bottom: 10%;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 100px;
+    background: none;
+    color: #ffffff;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.contact__link {
+    text-decoration: none;
+}
