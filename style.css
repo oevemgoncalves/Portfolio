@@ -58,7 +58,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url(image/foto-estudando\ 1.svg);
+    background-image: url(image/foto_estudando.svg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -164,5 +164,60 @@ body {
     color: #ffffff;
     position: relative;
     top: 5%;
+}
+
+/*quarta sessao*/ 
+.fourth-session__project {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.project__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10%;
+    margin: 5% 0 3% 0;
+    width: 900px;
+}
+
+.project__title {
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 3em;
+    color: var(--main-color);
+    margin-top: 2%;
+}
+
+.project__container__text {
+    display: flex;
+    flex-flow: column nowrap;
+
+    color: var(--main-color);
+    text-align: left;
+    
+}
+
+.project__name {
+    font-size: 2em;
+}
+
+.project__description {
+    font-size: 1.2em;
+    padding: 25px 0;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.link__project {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+hr {
+    width: 900px;
+    border-color: var(--main-color);
 }
 
