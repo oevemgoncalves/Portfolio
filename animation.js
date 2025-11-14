@@ -20,3 +20,11 @@ magneticItems.forEach(item => {
     });
 });
 
+//menu hamburger
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".list__menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("open");
+});

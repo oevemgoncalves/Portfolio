@@ -1,5 +1,3 @@
-@import url("styles/query.css");
-
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Doppio+One&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
@@ -81,6 +79,35 @@ body {
     opacity: 1;
 }
 
+/* ==== Botão hamburguer ==== */
+.hamburger {
+    display: none; /* só aparece no mobile */
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+/* ==== Estado aberto ==== */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 .first__session {
     display: flex;
     flex-flow: column nowrap;
@@ -96,6 +123,7 @@ body {
     
 
 }
+
 .initial__text {
     font-family: var(--font-main);
     font-weight: 200;
