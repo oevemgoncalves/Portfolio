@@ -24,13 +24,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
 
     background-color: #212121;
     border-bottom: 1px solid var(--main-color);
     height: 86px;
     padding: 0 40px;
-    width: 100%;
     z-index: 999;
 }
 
@@ -129,7 +128,7 @@ body {
 /*terceira sessao*/
 .third__session {
     width: 100%;
-    height: calc(100vh - 86px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,10 +154,14 @@ body {
 
 
 .about-me__text {
+    font-family: var(--font-main);
+    font-weight: 300;
     font-size: 2.4em;
 }
 
 .about-me__link {
+    font-family: var(--font-main);
+    font-weight: 100;
     font-size: 1.4em;
     text-decoration: none;
     color: #ffffff;
@@ -217,7 +220,8 @@ body {
 }
 
 hr {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     border-color: var(--main-color);
 }
 
@@ -226,14 +230,14 @@ hr {
     font-weight: bold;
     font-size: 1.3em;
     color: var(--main-color);
-    padding-bottom: 3%;
+    padding: 3%;
 }
 
 /*quinta sessao*/
 .fifth__session {
-    height: calc(100vh - 86px);
-    align-items: center;
-    margin: 10%;
+    height: 90vh;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contact__container {
@@ -269,3 +273,21 @@ hr {
 .contact__link {
     text-decoration: none;
 }
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    color: #c4c4c4bd;
+}
+
+.contact__text {
+    margin-bottom: 10px;
+}
+.footer__link {
+    color: #ffffff;
+    padding-right: 15px;
+}
+
