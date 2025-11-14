@@ -1,0 +1,71 @@
+@media screen and (min-width: 1650px) {
+    .header {
+        height: 140px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .image__logo {
+        width: 450px;
+        height: 90px;
+    }
+
+    .list__menu {
+        width: 450px;
+        margin-right: 150px;
+    }
+
+    .link__menu {
+        font-size: 2em;
+    }
+
+    .initial__text {
+        font-size: 2.4em;
+    }
+
+    .text__name {
+        font-size: 80px;
+    }
+
+    .text__cargo {
+        font-size: 40px;
+    }
+
+    .effect__text {
+        font-size: 80px;
+    }
+
+    .about-me__link {
+        font-size: 2em;
+    }
+
+    .project__container {
+        align-items: start;
+        width: 1024px;
+    }
+
+    .project__title {
+        font-size: 3.2em;
+    }
+
+    .project__name {
+        font-size: 2.5em;
+    }
+
+    .project__description {
+        font-size: 1.5em;
+    }
+
+    .link__project {
+        font-size: 1.2em;
+    }
+
+    hr {
+        background-color: antiquewhite;
+        max-width: 1024px;
+    }
+
+    .project__link {
+        font-size: 1.5em;
+    }
+}
