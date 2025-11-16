@@ -1,5 +1,5 @@
+//animação do menu ao passar o curso
 const magneticItems = document.querySelectorAll(".link__menu");
-
 magneticItems.forEach(item => {
     let xForce = 0;
     let yForce = 0;
@@ -28,6 +28,28 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     menu.classList.toggle("open");
 });
+
+const social = document.querySelector(".contact__images")
+const mobileSocial = document.querySelector(".mobile__social")
+const originalPlace = document.querySelector("#socialOriginal") 
+
+function handleSocialIcons() {
+    if (window.innerWidth <= 768) {
+        if (!mobileSocial.contains(social)) {
+            mobileSocial.appendChild(social)
+        }
+    } else {
+        if (!originalPlace.contains(social)) {
+            originalPlace.appendChild(social)
+            console.log("icons voltaram oa lugar original")
+        }
+    }
+}
+
+handleSocialIcons()
+window.addEventListener("resize", handleSocialIcons)
+console.log("img add com suceso")
+
 
 //copiar numero
 const btnContato = document.getElementById("btnContact");
