@@ -114,7 +114,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* background-image: url(image/foto_estudando.svg); */
+    background-image: url(image/foto_estudando.svg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
