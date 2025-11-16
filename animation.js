@@ -28,3 +28,22 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     menu.classList.toggle("open");
 });
+
+//copiar numero
+const btnContato = document.getElementById("btnContact");
+const mensagem = document.getElementById("mensagem");
+const numero = "+55 92 992199344 / +55 92 984448956"; // coloque seu número aqui
+
+btnContato.addEventListener("click", () => {
+    // Copia o número para a área de transferência
+    navigator.clipboard.writeText(numero).then(() => {
+        // Mostra a mensagem
+        alert("Número copiado!")
+        mensagem.classList.add("show");
+
+        // Esconde a mensagem depois de 2 segundos
+        setTimeout(() => {
+            mensagem.classList.remove("show");
+        }, 2000);
+    });
+});

@@ -330,6 +330,18 @@ hr {
     cursor: pointer;
 }
 
+.mensagem {
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #00c853;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+.mensagem.show {
+  opacity: 1;
+}
+
 .contact__link {
     text-decoration: none;
 }
