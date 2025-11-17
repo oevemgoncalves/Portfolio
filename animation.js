@@ -31,7 +31,7 @@ hamburger.addEventListener("click", () => {
 
 const social = document.querySelector(".contact__images")
 const mobileSocial = document.querySelector(".mobile__social")
-const originalPlace = document.querySelector("#socialOriginal") 
+const originalPlace = document.querySelector("#socialOriginal")
 
 function handleSocialIcons() {
     if (window.innerWidth <= 768) {

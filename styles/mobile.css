@@ -54,11 +54,7 @@
         background-position: center center  ;
         height: 100vh;
     }
-
-    /* .container__apresentacao {
-        padding-top: 20px;
-    } */
-
+    
     .initial__text {
         font-weight: 200;
         font-size: 1.2em;
@@ -120,7 +116,7 @@
     }
     
     .image__project {
-        display: none;
+        width: 90%;
     }
     
     hr {
