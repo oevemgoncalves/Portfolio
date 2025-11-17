@@ -1,0 +1,85 @@
+@media screen and (min-width: 769px) {
+
+    /* Quando rolar para a segunda sessão */
+    .header.scrolled {
+        background-color: transparent;
+        position: fixed;
+        backdrop-filter: blur(0px);
+        width: 100%;
+        border: none;
+    }
+
+    /* some o logo quando scrolled */
+    .header.scrolled .image__logo {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .header.scrolled .list__menu {
+        display: none !important;
+    }
+
+    /* E mostra o hamburger */
+    .header.scrolled .hamburger {
+        display: flex !important;
+    }
+
+    /* Menu abre grudado no hamburger */
+    .header.scrolled .list__menu.open {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        width: 320px;
+        height: 100vh;
+
+        background: var(--main-color);
+        padding: 20px 40px;
+        margin: 0;
+        gap: 40px;
+        z-index: 9999;
+
+        animation: elasticFromRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        transform-origin: right center;
+        /* puxado da direita */
+    }
+
+    /*Ajusta o tamanho da fonte para o novo layout de tela cheia */
+    .header.scrolled .list__menu.open .link__menu {
+        font-weight: bolder;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    /* Animação de puxar (barriguinha) */
+    @keyframes elasticFromRight {
+        0% {
+            transform: translateX(100%) scaleX(0.70);
+            border-top-left-radius: 90px;
+            border-bottom-left-radius: 90px;
+        }
+
+        40% {
+            transform: translateX(-30px) scaleX(1.15);
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 100%;
+        }
+
+        70% {
+            transform: translateX(0) scaleX(0.95);
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        100% {
+            transform: translateX(0) scaleX(1);
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}

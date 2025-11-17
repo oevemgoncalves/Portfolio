@@ -23,10 +23,41 @@ magneticItems.forEach(item => {
 //menu hamburger
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".list__menu");
+const body = document.body; // Adiciona referência ao body
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     menu.classList.toggle("open");
+
+    // NOVIDADE: Adiciona ou remove a classe no-scroll no body
+    if (menu.classList.contains("open")) {
+        // Bloqueia a rolagem quando o menu abre
+        body.classList.add("no-scroll");
+    } else {
+        // Restaura a rolagem quando o menu fecha
+        body.classList.remove("no-scroll");
+    }
+});
+
+// === Alterar menu ao rolar ===
+const header = document.querySelector(".header");
+const firstSession = document.querySelector(".first__session");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {  // qualquer rolagem
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+// Fechar o menu ao clicar em qualquer item
+document.querySelectorAll(".link__menu").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        menu.classList.remove("open");
+        body.classList.remove("no-scroll"); // NOVIDADE: Garante que o scroll volte ao fechar
+    });
 });
 
 const social = document.querySelector(".contact__images")
