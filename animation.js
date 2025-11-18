@@ -100,3 +100,23 @@ btnContato.addEventListener("click", () => {
         }, 2000);
     });
 });
+
+// ===== SCROLL REVEAL =====
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            // remove quando sai da tela
+            entry.target.classList.remove('active');
+        }
+    });
+}, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -10% 0px"
+});
+
+reveals.forEach(el => observer.observe(el));
