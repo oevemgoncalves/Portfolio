@@ -281,7 +281,6 @@ body {
 .project__container__text {
     display: flex;
     flex-flow: column nowrap;
-
     color: var(--main-color);
     text-align: left;
 
@@ -335,6 +334,7 @@ hr {
     height: 90vh;
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .contact__container {
