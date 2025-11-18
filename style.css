@@ -204,7 +204,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .about-me__title {
@@ -224,14 +223,14 @@ body {
     color: #ffffff;
 }
 
-
 .about-me__text {
     font-family: var(--font-main);
     font-weight: 300;
-    font-size: 2.4em;
+    font-size: 2.8vw;
 }
 
 .about-me__link {
+    display: inline-block;
     font-family: var(--font-main);
     font-weight: 100;
     font-size: 1.4em;
@@ -239,6 +238,18 @@ body {
     color: #ffffff;
     position: relative;
     top: 5%;
+    transition: transform 0.3s ease;
+}
+
+.about-me__link:hover {
+    color: var(--main-color);
+    transform: translateY(-3px);
+}
+
+.about-me__link__container {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
 }
 
 /*quarta sessao*/
@@ -342,6 +353,10 @@ hr {
 
 .hr__contact {
     margin-bottom: 10%;
+}
+
+.fifth__session div {
+    display: flex;
 }
 
 .btn {
